@@ -1,0 +1,7 @@
+{
+  "name": "CRQ-Rocket",
+  "description": "The Developer's Change Request Assistant — transform raw technical notes into professional, CAB-ready change requests and emails.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
