@@ -1,5 +1,7 @@
 # CRQ-Rocket: Step-by-Step Example Walkthrough 🚀
 
+🔗 **Live Application URL**: [https://ais-pre-opgfpzs3q725p5mqyk3u4h-877215028904.us-east1.run.app](https://ais-pre-opgfpzs3q725p5mqyk3u4h-877215028904.us-east1.run.app)
+
 This document demonstrates how an engineer uses **CRQ-Rocket** to take raw, messy developer notes and transform them into an audit-ready, enterprise-compliant Change Request (CRQ), an executive stakeholder email, and a formal monochrome A4 PDF dossier.
 
 ---

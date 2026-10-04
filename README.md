@@ -1,6 +1,11 @@
 # CRQ-Rocket 🚀
 ### The Developer's Change Request & CAB Release Assistant
 
+[![Live App](https://img.shields.io/badge/Live%20App-Open%20CRQ--Rocket-1a73e8?style=for-the-badge&logo=google-cloud&logoColor=white)](https://ais-pre-opgfpzs3q725p5mqyk3u4h-877215028904.us-east1.run.app)
+[![Documentation](https://img.shields.io/badge/Docs-Step--by--Step%20Tutorial-34a853?style=for-the-badge&logo=markdown&logoColor=white)](docs/EXAMPLE_TUTORIAL.md)
+
+🔗 **Live Deployment URL**: [https://ais-pre-opgfpzs3q725p5mqyk3u4h-877215028904.us-east1.run.app](https://ais-pre-opgfpzs3q725p5mqyk3u4h-877215028904.us-east1.run.app)
+
 CRQ-Rocket is a full-stack developer productivity application designed to bridge the gap between fast-moving engineering teams and formal IT Change Advisory Boards (CAB). It transforms raw, informal developer notes, defect identifiers, and technical code snippets into rigorous, enterprise-compliant Change Requests (CRQs), stakeholder broadcast emails, and formal monochrome PDF release dossiers.
 
 ---
