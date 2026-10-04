@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a73e8"/>
+      <stop offset="100%" stop-color="#1557b0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Window Frame -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="30" width="1120" height="720" rx="12" fill="#ffffff"/>
+    
+    <!-- Window Titlebar -->
+    <path d="M 40 42 Q 40 30 52 30 L 1148 30 Q 1160 30 1160 42 L 1160 74 L 40 74 Z" fill="#f1f3f4"/>
+    <circle cx="65" cy="52" r="6" fill="#ea4335"/>
+    <circle cx="85" cy="52" r="6" fill="#fbbc04"/>
+    <circle cx="105" cy="52" r="6" fill="#34a853"/>
+    
+    <!-- Address Bar -->
+    <rect x="140" y="42" width="700" height="24" rx="12" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="160" y="58" font-size="11" fill="#5f6368" font-family="monospace">https://crq-rocket.internal/new-change-request</text>
+
+    <!-- App Header -->
+    <rect x="40" y="74" width="1120" height="56" fill="#ffffff" stroke="#e8eaed" stroke-width="1"/>
+    <circle cx="75" cy="102" r="16" fill="#e8f0fe"/>
+    <path d="M 68 108 L 78 96 L 82 100 L 73 108 Z M 78 96 L 84 96 L 84 102 Z" fill="#1a73e8"/>
+    <text x="100" y="108" font-size="16" font-weight="700" fill="#202124">CRQ-Rocket</text>
+    <rect x="200" y="93" width="70" height="18" rx="9" fill="#e6f4ea"/>
+    <text x="212" y="106" font-size="10" font-weight="600" fill="#137333">v2.4 READY</text>
+
+    <!-- Header Right User Badge -->
+    <rect x="940" y="88" width="200" height="28" rx="14" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <circle cx="956" cy="102" r="8" fill="#1a73e8"/>
+    <text x="952" y="106" font-size="10" font-weight="700" fill="#ffffff">A</text>
+    <text x="972" y="106" font-size="11" font-weight="600" fill="#3c4043">Ahmed Mardi (Lead)</text>
+
+    <!-- Subheader Template Selector -->
+    <rect x="70" y="145" width="1060" height="42" rx="8" fill="#f8f9fa" stroke="#e8eaed" stroke-width="1"/>
+    <text x="88" y="171" font-size="12" font-weight="600" fill="#5f6368">QUICK-LOAD TEMPLATES:</text>
+    <rect x="250" y="153" width="160" height="26" rx="13" fill="#e8f0fe" stroke="#1a73e8" stroke-width="1"/>
+    <text x="264" y="170" font-size="11" font-weight="600" fill="#1a73e8">★ DEF-702 Redis Pool</text>
+    <rect x="420" y="153" width="180" height="26" rx="13" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="434" y="170" font-size="11" font-weight="500" fill="#5f6368">DEF-881 Schema Migration</text>
+    <rect x="610" y="153" width="170" height="26" rx="13" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="624" y="170" font-size="11" font-weight="500" fill="#5f6368">DEF-904 Auth Race Cond</text>
+
+    <!-- Main Intake Form Card -->
+    <rect x="70" y="200" width="1060" height="520" rx="10" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+
+    <!-- Field 1 & 2: Defect ID & Title Row -->
+    <text x="95" y="235" font-size="12" font-weight="700" fill="#3c4043">DEFECT NUMBER / TICKET ID *</text>
+    <rect x="95" y="245" width="220" height="38" rx="6" fill="#ffffff" stroke="#1a73e8" stroke-width="2"/>
+    <text x="110" y="270" font-size="14" font-weight="600" fill="#202124">DEF-702</text>
+
+    <text x="340" y="235" font-size="12" font-weight="700" fill="#3c4043">CHANGE REQUEST TITLE *</text>
+    <rect x="340" y="245" width="765" height="38" rx="6" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="355" y="270" font-size="14" font-weight="500" fill="#202124">Fix Redis connection pool exhaustion under peak concurrency</text>
+
+    <!-- Field 3: Raw Technical Fix Notes -->
+    <text x="95" y="315" font-size="12" font-weight="700" fill="#3c4043">RAW FIX NOTES / CODE SNIPPETS / SQL QUERIES *</text>
+    <rect x="95" y="325" width="1010" height="110" rx="6" fill="#1e1e1e" stroke="#2d2d2d" stroke-width="1"/>
+    <text x="115" y="348" font-size="12" fill="#9cdcfe" font-family="monospace">// Reconfigured redis client pool sizing &amp; reap timer</text>
+    <text x="115" y="368" font-size="12" fill="#ce9178" font-family="monospace">const pool = createPool({ max: 50, min: 10, idleTimeoutMillis: 30000 });</text>
+    <text x="115" y="388" font-size="12" fill="#dcdcaa" font-family="monospace">await pool.acquire(); // Wrapped in try/finally to prevent socket leak</text>
+    <text x="115" y="408" font-size="12" fill="#6a9955" font-family="monospace">// Closes issue where hanging sockets caused 504 Gateway Timeouts</text>
+
+    <!-- Field 4: Raw Testing Details -->
+    <text x="95" y="465" font-size="12" font-weight="700" fill="#3c4043">RAW TESTING / VALIDATION NOTES *</text>
+    <rect x="95" y="475" width="1010" height="75" rx="6" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="115" y="500" font-size="13" fill="#202124">Executed load test suite with k6 simulating 10,000 req/sec over 45 minutes on Staging cluster.</text>
+    <text x="115" y="525" font-size="13" fill="#188038">Result: Zero socket leaks observed. Memory held stable at 240MB. 0 HTTP 504 errors.</text>
+
+    <!-- Field 5 & 6: Release Date, Risk Level & Stakeholders -->
+    <text x="95" y="580" font-size="12" font-weight="700" fill="#3c4043">TARGET RELEASE DATE</text>
+    <rect x="95" y="590" width="180" height="36" rx="6" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="110" y="613" font-size="13" fill="#202124">2026-10-15 02:00 UTC</text>
+
+    <text x="300" y="580" font-size="12" font-weight="700" fill="#3c4043">ASSESSED RISK LEVEL</text>
+    <rect x="300" y="590" width="130" height="36" rx="6" fill="#fef7e0" stroke="#f29900" stroke-width="1"/>
+    <text x="325" y="613" font-size="13" font-weight="700" fill="#b06000">● MEDIUM</text>
+
+    <text x="455" y="580" font-size="12" font-weight="700" fill="#3c4043">STAKEHOLDER EMAIL DISTRIBUTION LIST</text>
+    <rect x="455" y="590" width="650" height="36" rx="6" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="470" y="613" font-size="12" fill="#5f6368" font-family="monospace">cab-approval@company.internal, qa-lead@company.internal, sre-team@company.internal</text>
+
+    <!-- Submit Button -->
+    <rect x="735" y="650" width="370" height="48" rx="6" fill="url(#blueGrad)"/>
+    <text x="770" y="680" font-size="15" font-weight="700" fill="#ffffff">Generate CAB Package with Gemini AI →</text>
+  </g>
+</svg>

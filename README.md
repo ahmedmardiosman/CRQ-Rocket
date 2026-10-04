@@ -14,6 +14,8 @@ CRQ-Rocket is a full-stack developer productivity application designed to bridge
 - **Direct Mail & Webmail Launch**: Launches your default email client (`mailto:`) or Gmail Web with recipients, subject, and body pre-filled, while automatically downloading the PDF dossier ready to attach.
 - **Developer Identity Profiles**: Stores local engineer identity profiles (Name, Role, and Email) so all generated release requests and sign-offs accurately reflect the author.
 
+> 📖 **Looking for a full walkthrough?** Check out the [Step-by-Step Example Tutorial with Screenshots](docs/EXAMPLE_TUTORIAL.md) to see an end-to-end walkthrough of resolving defect `DEF-702`.
+
 ---
 
 ## 💡 Initial Creation Prompt

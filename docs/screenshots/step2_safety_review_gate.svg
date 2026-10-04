@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <linearGradient id="primaryBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a73e8"/>
+      <stop offset="100%" stop-color="#1557b0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Browser Window Frame -->
+  <g filter="url(#shadow2)">
+    <rect x="40" y="30" width="1120" height="720" rx="12" fill="#ffffff"/>
+    
+    <!-- Window Titlebar -->
+    <path d="M 40 42 Q 40 30 52 30 L 1148 30 Q 1160 30 1160 42 L 1160 74 L 40 74 Z" fill="#f1f3f4"/>
+    <circle cx="65" cy="52" r="6" fill="#ea4335"/>
+    <circle cx="85" cy="52" r="6" fill="#fbbc04"/>
+    <circle cx="105" cy="52" r="6" fill="#34a853"/>
+    
+    <!-- Address Bar -->
+    <rect x="140" y="42" width="700" height="24" rx="12" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="160" y="58" font-size="11" fill="#5f6368" font-family="monospace">https://crq-rocket.internal/review-and-safety-gate</text>
+
+    <!-- App Header -->
+    <rect x="40" y="74" width="1120" height="56" fill="#ffffff" stroke="#e8eaed" stroke-width="1"/>
+    <text x="75" y="108" font-size="16" font-weight="700" fill="#202124">CRQ-Rocket</text>
+    <rect x="180" y="93" width="130" height="20" rx="10" fill="#e8f0fe"/>
+    <text x="195" y="107" font-size="11" font-weight="600" fill="#1a73e8">SAFETY GATE ACTIVE</text>
+
+    <!-- Review Gate Subheader -->
+    <rect x="70" y="145" width="1060" height="48" rx="8" fill="#e6f4ea" stroke="#ceead6" stroke-width="1"/>
+    <circle cx="95" cy="169" r="10" fill="#34a853"/>
+    <text x="91" y="173" font-size="12" font-weight="700" fill="#ffffff">✓</text>
+    <text x="115" y="174" font-size="13" font-weight="700" fill="#137333">AI Transformation Complete · DEF-702 Ready for Engineering Sign-Off</text>
+    <text x="880" y="174" font-size="12" font-weight="600" fill="#188038">Audit Rules: Passed (4/4)</text>
+
+    <!-- Two-Column Review Layout -->
+    <!-- Column 1: Formal Implementation & Validation Docs -->
+    <rect x="70" y="205" width="560" height="425" rx="8" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    
+    <rect x="70" y="205" width="560" height="40" rx="8" fill="#f8f9fa"/>
+    <text x="90" y="230" font-size="12" font-weight="700" fill="#3c4043">1. FORMAL TECHNICAL IMPLEMENTATION (PDF PREVIEW)</text>
+
+    <text x="90" y="268" font-size="12" fill="#202124" font-weight="600">Executive Summary &amp; Root Cause Mitigation:</text>
+    <text x="90" y="288" font-size="11" fill="#3c4043">The Redis connection management subsystem was remediated to mitigate</text>
+    <text x="90" y="306" font-size="11" fill="#3c4043">intermittent socket exhaustion during sustained burst concurrency.</text>
+    
+    <!-- Preserved Code Block -->
+    <rect x="90" y="322" width="520" height="75" rx="6" fill="#1e1e1e"/>
+    <text x="105" y="344" font-size="10" fill="#9cdcfe" font-family="monospace">const pool = createPool({</text>
+    <text x="120" y="362" font-size="10" fill="#ce9178" font-family="monospace">  max: 50, min: 10, idleTimeoutMillis: 30000</text>
+    <text x="105" y="380" font-size="10" fill="#9cdcfe" font-family="monospace">});</text>
+
+    <text x="90" y="420" font-size="12" fill="#202124" font-weight="600">Verification &amp; Test Procedures:</text>
+    <text x="90" y="440" font-size="11" fill="#3c4043">Synthetic stress testing was performed via k6 executing 10,000 req/sec</text>
+    <text x="90" y="458" font-size="11" fill="#3c4043">for 45 continuous minutes. Zero connection dropouts or socket leaks.</text>
+
+    <rect x="90" y="480" width="520" height="48" rx="6" fill="#fef7e0" stroke="#f29900" stroke-width="1"/>
+    <text x="105" y="500" font-size="11" font-weight="700" fill="#b06000">CAB Risk Justification (Medium):</text>
+    <text x="105" y="518" font-size="10" fill="#3c4043">Core infrastructure tier change with automated failover and verified rollback scripts.</text>
+
+    <text x="90" y="555" font-size="11" font-weight="600" fill="#5f6368">Sign-off Submitter: Ahmed Mardi (Lead Software Engineer)</text>
+
+    <!-- Column 2: Stakeholder Email Draft -->
+    <rect x="650" y="205" width="480" height="425" rx="8" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    
+    <rect x="650" y="205" width="480" height="40" rx="8" fill="#f8f9fa"/>
+    <text x="670" y="230" font-size="12" font-weight="700" fill="#3c4043">2. STAKEHOLDER EMAIL BROADCAST DRAFT</text>
+
+    <text x="670" y="265" font-size="11" font-weight="600" fill="#5f6368">Subject:</text>
+    <rect x="725" y="250" width="385" height="26" rx="4" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    <text x="735" y="267" font-size="11" font-weight="700" fill="#1a73e8">[DEF-702] CRQ: Fix Redis connection pool exhaustion</text>
+
+    <text x="670" y="300" font-size="11" font-weight="600" fill="#5f6368">Body:</text>
+    <rect x="670" y="310" width="440" height="230" rx="6" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="685" y="335" font-size="11" fill="#3c4043">Hello Team,</text>
+    <text x="685" y="360" font-size="11" fill="#3c4043">Please find attached the formal Change Request (CRQ) dossier for</text>
+    <text x="685" y="378" font-size="11" font-weight="700" fill="#202124">DEF-702: Fix Redis connection pool exhaustion.</text>
+    
+    <text x="685" y="405" font-size="11" fill="#3c4043">Pre-deployment validation and regression testing completed successfully</text>
+    <text x="685" y="423" font-size="11" fill="#3c4043">on the staging cluster with zero blocking defects.</text>
+
+    <text x="685" y="450" font-size="11" fill="#3c4043">Full implementation details and verification logs are documented</text>
+    <text x="685" y="468" font-size="11" fill="#3c4043">in the attached CAB PDF dossier.</text>
+
+    <text x="685" y="495" font-size="11" font-weight="600" fill="#137333">We look forward to hearing from you as soon as possible.</text>
+    <text x="685" y="520" font-size="11" fill="#5f6368">Sincerely, Ahmed Mardi (Lead Software Engineer)</text>
+
+    <!-- Bottom Actions Bar -->
+    <rect x="70" y="645" width="1060" height="65" rx="8" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+    
+    <rect x="90" y="658" width="160" height="38" rx="6" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="110" y="682" font-size="12" font-weight="600" fill="#3c4043">← Back to Edit Notes</text>
+
+    <rect x="265" y="658" width="190" height="38" rx="6" fill="#ffffff" stroke="#1a73e8" stroke-width="1"/>
+    <text x="285" y="682" font-size="12" font-weight="600" fill="#1a73e8">📥 Download CAB PDF</text>
+
+    <!-- Primary Delivery Buttons -->
+    <rect x="700" y="658" width="170" height="38" rx="6" fill="#ffffff" stroke="#1a73e8" stroke-width="1.5"/>
+    <text x="725" y="682" font-size="12" font-weight="600" fill="#1a73e8">✉ Send Test to Me</text>
+
+    <rect x="885" y="658" width="225" height="38" rx="6" fill="url(#primaryBlue)"/>
+    <text x="905" y="682" font-size="13" font-weight="700" fill="#ffffff">🚀 Send to All Stakeholders</text>
+  </g>
+</svg>
